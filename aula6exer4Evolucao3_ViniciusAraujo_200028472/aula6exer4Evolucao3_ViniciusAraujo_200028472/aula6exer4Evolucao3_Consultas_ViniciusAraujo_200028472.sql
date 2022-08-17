@@ -17,4 +17,4 @@ USE aula6exer4Evolucao3 ;
 
 SELECT * FROM EMPREGADO WHERE idDepartamento = 1;
 SELECT * FROM EMPREGADO WHERE dataNascimento BETWEEN '1985-01-01' AND '2005-01-01';
-SELECT * FROM DEPENDENTE WHERE nome LIKE "%-"
+SELECT * FROM DEPENDENTE dp,EMPREGADO emp WHERE dp.matricula = 1 and emp.matricula = 1 LIKE "%-%";
